@@ -18,7 +18,7 @@ class CloudinaryServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('teepluss/cloudinary');
+		//$this->package('teepluss/cloudinary');
 	}
 
 	/**
