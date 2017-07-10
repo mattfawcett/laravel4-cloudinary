@@ -28,8 +28,7 @@ class CloudinaryServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['cloudinary'] = $this->app->share(function($app)
-		{
+		$this->app->singleton('cloudinary', function($app) {
 			return new CloudinaryWrapper($app['config']);
 		});
 	}
